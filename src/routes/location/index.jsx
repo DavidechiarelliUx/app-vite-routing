@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { roomList } from "../../mocks/reservation";
+import styles from "../../styles/location.module.scss";
+import { Link } from "react-router-dom";
 
 export default function Location() {
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -20,13 +22,14 @@ export default function Location() {
     ));
 
   return (
-    <div className="locationStatic">
+    <div className={styles.locationStatic}>
       {selectedLocation ? (
         <div>
           <h2>{selectedLocation.name}</h2>
           <p>{selectedLocation.description}</p>
           <img src={selectedLocation.imageLocation} alt={selectedLocation.name} />
           <p>Price: {selectedLocation.price}</p>
+          <Link to="/" className="button">Go back to locations</Link>
         </div>
       ) : (
         <>

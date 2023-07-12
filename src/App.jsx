@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import { Link, Outlet } from "react-router-dom";
-import './App.css'
-import Navbar from './components/navbar';
-function App() {
+// import { useState } from 'react'
+// import { Link, Outlet } from "react-router-dom";
+// import './App.module.scss'
+// import Navbar from './components/navbar';
+// function App() {
 
-  return (
-    <>
-      <div className='app'>
-        <Navbar/>
-        </div>
-    </>
-  )
-}
+//   return (
+//     <>
+//       <div className='app'>
+      
+//         </div>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
